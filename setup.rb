@@ -29,12 +29,10 @@ module StudentDB
         INSERT INTO students
           (first_name, last_name, email, location, birthdate, created_at, updated_at)
         VALUES
-          ('Brick','Thornton', 'brick.thor@dbc.com', 'Chicago', DATE('1995-04-09'), DATETIME('now'), DATETIME('now'));
+          ('Brick','Thornton', 'brick.thor@dbc.com', 'Chicago', DATE('1995-04-09'), DATETIME('now'), DATETIME('now')),
 
-        VALUES
-          ('Johnny','Cash', 'john@cash.com', 'country', DATE('1945-02-15'), DATETIME('now'), DATETIME('now'));
+          ('Johnny','Cash', 'john@cash.com', 'country', DATE('1945-02-15'), DATETIME('now'), DATETIME('now')),
 
-        VALUES
           ('Bill', 'Gates', 'bill@microsoft.com', 'silicon valley', DATE('1955-10-28'), DATETIME('now'), DATETIME('now'));
       SQL
     )
