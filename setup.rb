@@ -1,4 +1,4 @@
-require 'sqlite3'
+  require 'sqlite3'
 
 # If you want to overwrite your database you will need
 # to delete it before running this file
