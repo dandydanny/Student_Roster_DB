@@ -12,9 +12,9 @@ module StudentDB
           id INTEGER PRIMARY KEY AUTOINCREMENT,
           first_name VARCHAR(64) NOT NULL,
           last_name VARCHAR(64) NOT NULL,
-
-          -- add the additional attributes here!
-
+          email VARCHAR(64) NOT NULL,
+          location VARCHAR(64) NOT NULL,
+          birthdate DATETIME NOT NULL,
           created_at DATETIME NOT NULL,
           updated_at DATETIME NOT NULL
         );
@@ -31,7 +31,7 @@ module StudentDB
         VALUES
           ('Brick','Thornton',DATETIME('now'), DATETIME('now'));
 
-        -- Create two more students who are at least as cool as this one.
+       # -- Create two more students who are at least as cool as this one.
       SQL
     )
   end
