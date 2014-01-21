@@ -1,6 +1,6 @@
 require 'sqlite3'
 
-# If you want to overwrite your database you will need 
+# If you want to overwrite your database you will need
 # to delete it before running this file
 $db = SQLite3::Database.new "students.db"
 
@@ -26,12 +26,21 @@ module StudentDB
     # Add a few records to your database when you start
     $db.execute(
       <<-SQL
-        INSERT INTO students 
-          (first_name, last_name, created_at, updated_at)
+        INSERT INTO students
+          (first_name, last_name, email, location, birthdate, created_at, updated_at)
         VALUES
           ('Brick','Thornton',DATETIME('now'), DATETIME('now'));
 
        # -- Create two more students who are at least as cool as this one.
+        INSERT INTO students
+          (first_name, last_name, email, location, birthdate, created_at, updated_at)
+        VALUES
+          ('Johnny','Cash', 'john@cash.com', 'country', DATETIME('1945-02-15'), DATETIME('now'), DATETIME('now'));
+
+        INSERT INTO students
+          (first_name, last_name, email, location, birthdate, created_at, updated_at)
+        VALUES
+          ('Bill', 'Gates', 'bill@microsoft.com', 'silicon valley', DATETIME('1955-10-28'), DATETIME('now'), DATETIME('now'));
       SQL
     )
   end
