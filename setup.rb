@@ -29,18 +29,18 @@ module StudentDB
         INSERT INTO students
           (first_name, last_name, email, location, birthdate, created_at, updated_at)
         VALUES
-          ('Brick','Thornton', 'brick.thor@dbc.com', 'Chicago', DATETIME'1995-04-09', DATETIME('now'), DATETIME('now'));
+          ('Brick','Thornton', 'brick.thor@dbc.com', 'Chicago', DATE('1995-04-09'), DATETIME('now'), DATETIME('now'));
 
        # -- Create two more students who are at least as cool as this one.
         INSERT INTO students
           (first_name, last_name, email, location, birthdate, created_at, updated_at)
         VALUES
-          ('Johnny','Cash', 'john@cash.com', 'country', DATETIME('1945-02-15'), DATETIME('now'), DATETIME('now'));
+          ('Johnny','Cash', 'john@cash.com', 'country', DATE('1945-02-15'), DATETIME('now'), DATETIME('now'));
 
         INSERT INTO students
           (first_name, last_name, email, location, birthdate, created_at, updated_at)
         VALUES
-          ('Bill', 'Gates', 'bill@microsoft.com', 'silicon valley', DATETIME('1955-10-28'), DATETIME('now'), DATETIME('now'));
+          ('Bill', 'Gates', 'bill@microsoft.com', 'silicon valley', DATE('1955-10-28'), DATETIME('now'), DATETIME('now'));
       SQL
     )
   end
