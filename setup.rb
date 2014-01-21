@@ -29,7 +29,7 @@ module StudentDB
         INSERT INTO students
           (first_name, last_name, email, location, birthdate, created_at, updated_at)
         VALUES
-          ('Brick','Thornton',DATETIME('now'), DATETIME('now'));
+          ('Brick','Thornton', 'brick.thor@dbc.com', 'Chicago', DATETIME'1995-04-09', DATETIME('now'), DATETIME('now'));
 
        # -- Create two more students who are at least as cool as this one.
         INSERT INTO students
